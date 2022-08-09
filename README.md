@@ -2,8 +2,13 @@
 
 This project demonstrates a basic Hardhat use case with ReactJS.
 
-Token Labrador:
+### Token Labrador :
 
-Address - 0xE990AA8EDBB52Dba7dd35EEC7bef185872cb4C81
-Symbol - LABR
-Decimals - 0
+<div>Address - 0xE990AA8EDBB52Dba7dd35EEC7bef185872cb4C81</div>
+<div>Symbol - LABR</div>
+<div>Decimals - 0</div>
+
+### Website :
+
+![Image text](https://github.com/ArthurChemov/mint_website_ReactJS/blob/main/src/assets/background/Screenshot1.PNG)
+![Image text](https://github.com/ArthurChemov/mint_website_ReactJS/blob/main/src/assets/background/Screenshot2.PNG)
