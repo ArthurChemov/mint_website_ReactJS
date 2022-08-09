@@ -49,16 +49,7 @@ const Coin = ({ accounts, setAccounts}) => {
         {isConnected ? (
           <div>
             <Flex align="center" justify="center">
-              <Button
-                backgroundColor="#ff0000"
-                borderRadius="15px"
-                boxShadow="0px 2px 2px 1px #0F0F0F"
-                color="white"
-                fontFamily="inherit"
-                padding="15px"
-                marginTop="10px"
-                onClick = {handleDecrement}
-              >-</Button>
+              <button className='btn' onClick = {handleDecrement}>-</button>
               <Input
                 readOnly
                 fontFamily="inherit"
@@ -69,27 +60,9 @@ const Coin = ({ accounts, setAccounts}) => {
                 marginTop="10px"
                 type = "number"
                 value = {mintAmount}/>
-              <Button
-                backgroundColor="#ff0000"
-                borderRadius="15px"
-                boxShadow="0px 2px 2px 1px #0F0F0F"
-                color="white"
-                fontFamily="inherit"
-                padding="15px"
-                marginTop="10px"
-                onClick = {handleIncrement}
-              >+</Button>
+              <button className='btn' onClick = {handleIncrement}>+</button>
             </Flex>
-            <Button
-              backgroundColor="#ff0000"
-              borderRadius="15px"
-              boxShadow="0px 2px 2px 1px #0F0F0F"
-              color="white"
-              fontFamily="inherit"
-              padding="15px"
-              marginTop="10px"
-              onClick = {handleMint}
-            >MINT NOW</Button>
+            <button className='btn' onClick = {handleMint}>MINT NOW</button>
           </div>
         ) : (
           <Text

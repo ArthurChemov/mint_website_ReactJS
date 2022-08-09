@@ -10,5 +10,5 @@ This project demonstrates a basic Hardhat use case with ReactJS.
 
 ### Website :
 
-![Image text](https://github.com/ArthurChemov/mint_website_ReactJS/blob/main/src/assets/background/Screenshot1.PNG)
-![Image text](https://github.com/ArthurChemov/mint_website_ReactJS/blob/main/src/assets/background/Screenshot2.PNG)
+![Image text](https://github.com/ArthurChemov/mint_website_ReactJS/blob/main/src/assets/background/Screenshot1.png)
+![Image text](https://github.com/ArthurChemov/mint_website_ReactJS/blob/main/src/assets/background/Screenshot2.png)

@@ -31,7 +31,7 @@ const NavBar = ({ accounts, setAccounts}) => {
             <FaIcons.FaBars onClick={showSidebar} />
           </Button>
           <Flex>
-            <Link href="https://www.discord.com">
+            <Link href="https://discord.gg/FSvTDF72">
               <Image src="https://img.icons8.com/color/48/000000/discord-logo.png" margin="0 15px"/>
             </Link>
             <Link href="https://twitter.com/labrchain">
