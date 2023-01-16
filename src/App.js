@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import './App.css';
-import NavBar from './assets/NavBar';
+import NavBar from './navbar/NavBar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Coin from './assets/pages/Coin';
-import NFTs from './assets/pages/NFTs';
-import P2E from './assets/pages/P2E';
-import Home from './assets/pages/Home';
-import Team from './assets/pages/Team';
-import Support from './assets/pages/Support';
+import Coin from './pages/Coin';
+import NFTs from './pages/NFTs';
+import P2E from './pages/P2E';
+import Home from './pages/Home';
+import Team from './pages/Team';
+import Support from './pages/Support';
 
 function App() {
   const [accounts, setAccounts] = useState([]);
@@ -19,11 +19,11 @@ function App() {
           <NavBar accounts = {accounts} setAccounts = {setAccounts} />
           <Routes>
             <Route path='/' element={<Home/>} />
-            <Route path='/assets/pages/Coin' element={<Coin accounts = {accounts} setAccounts = {setAccounts}/>} />
-            <Route path='/assets/pages/NFTs' element={<NFTs/>} />
-            <Route path='/assets/pages/P2E' element={<P2E/>} />
-            <Route path='/assets/pages/Team' element={<Team/>} />
-            <Route path='/assets/pages/Support' element={<Support/>} />
+            <Route path='/pages/Coin' element={<Coin accounts = {accounts} setAccounts = {setAccounts}/>} />
+            <Route path='/pages/NFTs' element={<NFTs/>} />
+            <Route path='/pages/P2E' element={<P2E/>} />
+            <Route path='/pages/Team' element={<Team/>} />
+            <Route path='/pages/Support' element={<Support/>} />
           </Routes>
         </BrowserRouter>
       </div>

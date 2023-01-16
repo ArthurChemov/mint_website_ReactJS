@@ -1,8 +1,8 @@
 import React from 'react';
 import { Box, Flex, Text } from "@chakra-ui/react";
-import nft1 from '../nft/nft1.png';
-import nft2 from '../nft/nft2.png';
-import nft3 from '../nft/nft3.png';
+import nft1 from '../assets/nft/nft1.png';
+import nft2 from '../assets/nft/nft2.png';
+import nft3 from '../assets/nft/nft3.png';
 
 function NFTs() {
   return (

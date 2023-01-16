@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ethers, BigNumber} from 'ethers';
-import { Box, Button, Flex, Input, Text } from "@chakra-ui/react";
+import { Box, Flex, Input, Text } from "@chakra-ui/react";
 import labradorsNFT from '../LabradorsNFT.json';
 
 const labradorsNFTAddress = "0xE990AA8EDBB52Dba7dd35EEC7bef185872cb4C81";
