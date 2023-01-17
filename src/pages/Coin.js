@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ethers, BigNumber} from 'ethers';
-import { Box, Flex, Input, Text } from "@chakra-ui/react";
 import labradorsNFT from '../LabradorsNFT.json';
+import './Coin.css';
 
 const labradorsNFTAddress = "0xE990AA8EDBB52Dba7dd35EEC7bef185872cb4C81";
 
@@ -39,44 +39,25 @@ const Coin = ({ accounts, setAccounts}) => {
   }
 
   return (
-    <Flex justify="center" align="center" height="100vh" paddingBottom="150px">
-      <Box width="520px">
-        <div>
-          <Text fontSize="24px" textShadow="0 5px #000000">
-            Dear, community, let's make owr own bullish and raise the value of our coin!
-          </Text>
-        </div>
-        {isConnected ? (
+    <section className='page'>
+      <h3>
+        Dear, community, let's make owr own bullish and raise the value of our coin!
+      </h3>
+      {isConnected ? (
+        <div className='connected'>
           <div>
-            <Flex align="center" justify="center">
-              <button className='btn' onClick = {handleDecrement}>-</button>
-              <Input
-                readOnly
-                fontFamily="inherit"
-                width="100px"
-                height="40px"
-                textAlign="center"
-                paddingLeft="19px"
-                marginTop="10px"
-                type = "number"
-                value = {mintAmount}/>
-              <button className='btn' onClick = {handleIncrement}>+</button>
-            </Flex>
-            <button className='btn' onClick = {handleMint}>MINT NOW</button>
+            <button className='btn' onClick = {handleDecrement}>-</button>
+              <input readOnly type = "number" value = {mintAmount}/>
+            <button className='btn' onClick = {handleIncrement}>+</button>
           </div>
+          <button className='btn' onClick = {handleMint}>MINT NOW</button>
+        </div>
         ) : (
-          <Text
-            color="#ff0000"
-            marginTop="70px"
-            fontSize="30px"
-            letterSpacing="-5.5%"
-            fontFamily="VT323"
-            textShadow="0 3px #000000"
-          >You must be connected to Mint.
-          </Text>
+          <p className='connecting'>
+            You must be connected to Mint.
+          </p>
         )}
-    </Box>
-  </Flex>
+    </section>
   );
 };
 

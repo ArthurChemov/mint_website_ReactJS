@@ -4,7 +4,7 @@ import * as AiIcons from 'react-icons/ai';
 import { SidebarData } from './SidebarData';
 import { IconContext } from 'react-icons';
 import { NavLink } from 'react-router-dom';
-import { Button, Flex, Image, Link} from "@chakra-ui/react";
+import { Link} from "@chakra-ui/react";
 import './Navbar.css';
 
 const NavBar = ({ accounts, setAccounts}) => {
@@ -27,46 +27,32 @@ const NavBar = ({ accounts, setAccounts}) => {
     <>
       <IconContext.Provider value={{ color: '#fff' }}>
         <div className='navbar' >
-          <Button className='navbar' cursor="pointer" padding="0 20px">
+          <button>
             <FaIcons.FaBars onClick={showSidebar} />
-          </Button>
-          <Flex>
-            <Link href="https://discord.gg/FSvTDF72">
-              <Image src="https://img.icons8.com/color/48/000000/discord-logo.png" margin="0 15px"/>
-            </Link>
-            <Link href="https://twitter.com/labrchain">
-              <Image src="https://img.icons8.com/fluency/48/000000/twitter.png" margin="0 15px"/>
-            </Link>
-            <Link href="https://www.instagram.com">
-              <Image src="https://img.icons8.com/fluency/48/000000/instagram-new.png" margin="0 15px"/>
-            </Link>
-          </Flex>
+          </button>
+          <nav>
+            <a href="https://discord.gg/FSvTDF72">
+              <img src="https://img.icons8.com/color/48/000000/discord-logo.png" alt="" />
+            </a>
+            <a href="https://twitter.com/labrchain">
+              <img src="https://img.icons8.com/fluency/48/000000/twitter.png" alt="" />
+            </a>
+            <a href="https://www.instagram.com">
+              <img src="https://img.icons8.com/fluency/48/000000/instagram-new.png" alt="" />
+            </a>
+          </nav>
 
-          <Flex justify="flex-end" width="40%">
+          <div>
             {/* Connect */}
             {isConnected ? (
-              <Button
-                backgroundColor="#ff0000"
-                borderRadius="15px"
-                boxShadow="0px 2px 2px 1px #0F0F0F"
-                color="white"
-                fontFamily="inherit"
-                padding="10px"
-                margin="0 15px"
-              >Connected</Button>) : (
-                <Button
-                  backgroundColor="#ff0000"
-                  borderRadius="15px"
-                  boxShadow="0px 2px 2px 1px #0F0F0F"
-                  color="white"
-                  fontFamily="inherit"
-                  padding="10px"
-                  margin="0 15px"
+              <button className='btn'
+              >Connected</button>) : (
+                <button className='btn'
                   onClick={connectAccount}
                 >Metamask
-                </Button>
+                </button>
               )}
-          </Flex>
+          </div>
         </div>
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
           <ul className='nav-menu-items' onClick={showSidebar}>

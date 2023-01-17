@@ -1,32 +1,42 @@
 import React from 'react';
-import { Box, Flex, Text } from "@chakra-ui/react";
 import nft1 from '../assets/nft/nft1.png';
 import nft2 from '../assets/nft/nft2.png';
 import nft3 from '../assets/nft/nft3.png';
+import './NFTs.css';
 
 function NFTs() {
   return (
-    <Flex justify="center" height="100vh" paddingBottom="150px" padding="30px 0">
-      <Box width="610px">
-        <div>
-          <Text fontSize="30px" textShadow="0 5px #000000">
-            NFTs
-          </Text>
+    <section className='page'>
+      <h1>
+        NFTs
+      </h1>
+      <div className='content'>
+        <div className='item1'>
+          <img src={nft1} weight="150px" height="150px" alt=""/>
+          <p>
+            <button className='btn'>Mint now</button>
+          </p>
         </div>
-        <div>
-          <Flex margin="50px">
-            <img src={nft1} weight="150px" height="150px" alt=""/>
-            <img src={nft2} weight="150px" height="150px" alt=""/>
-            <img src={nft3} weight="150px" height="150px" alt=""/>
-          </Flex>
+        <div className='item2'>
+          <img src={nft2} weight="150px" height="150px" alt=""/>
+          <p>
+            <button className='btn'>Mint now</button>
+          </p>
         </div>
-        <div>
-          <button className='btn'>Mint now</button>
-          <button className='btn'>Mint now</button>
-          <button className='btn'>Mint now</button>
+        <div className='item3'>
+          <img src={nft3} weight="150px" height="150px" alt=""/>
+          <p>
+            <button className='btn'>Mint now</button>
+          </p>
         </div>
-      </Box>
-    </Flex>
+        <div className='item4'>
+          <img src={nft2} weight="150px" height="150px" alt=""/>
+          <p>
+            <button className='btn'>Mint now</button>
+          </p>
+        </div>
+      </div>
+    </section>
   );
 }
 
