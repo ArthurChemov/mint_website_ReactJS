@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "//arthurchemov.github.io/mint_website_ReactJS/static/css/main.2783ab7e.css",
+    "main.js": "//arthurchemov.github.io/mint_website_ReactJS/static/js/main.90880718.js",
+    "static/media/nft2.png": "//arthurchemov.github.io/mint_website_ReactJS/static/media/nft2.3979d4293086a6eb8ab0.png",
+    "static/media/nft3.png": "//arthurchemov.github.io/mint_website_ReactJS/static/media/nft3.d512c551aa85c5831105.png",
+    "static/media/nft1.png": "//arthurchemov.github.io/mint_website_ReactJS/static/media/nft1.a1d30b208969152233b7.png",
+    "static/media/pixel-city-chill.gif": "//arthurchemov.github.io/mint_website_ReactJS/static/media/pixel-city-chill.f1e85d67dc06f732ce62.gif",
+    "index.html": "//arthurchemov.github.io/mint_website_ReactJS/index.html",
+    "main.2783ab7e.css.map": "//arthurchemov.github.io/mint_website_ReactJS/static/css/main.2783ab7e.css.map",
+    "main.90880718.js.map": "//arthurchemov.github.io/mint_website_ReactJS/static/js/main.90880718.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2783ab7e.css",
+    "static/js/main.90880718.js"
+  ]
+}
